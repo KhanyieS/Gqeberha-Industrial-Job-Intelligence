@@ -14,13 +14,15 @@
               sans: ['Inter', 'sans-serif'],
             },
             colors: {
-              primary: '#4F46E5', // Indigo 600
-              secondary: '#64748B', // Slate 500
-              accent: '#F59E0B', // Amber 500
-              danger: '#EF4444', // Red 500
-              success: '#10B981', // Emerald 500
-              background: '#F8FAFC', // Slate 50
-              surface: '#FFFFFF',
+              cream: '#F9F7E8', // Main Background
+              charcoal: '#1E1E1E', // Card Background
+              charcoalLight: '#2A2A2A', // Hover states
+              amber: '#FFCC00', // Primary Accent
+              amberDark: '#E6B800',
+              textLight: '#F5F5F5',
+              textGray: '#A3A3A3',
+              danger: '#EF4444',
+              success: '#10B981',
             }
           }
         }
@@ -28,8 +30,9 @@
     </script>
     <style>
       body {
-        background-color: #F8FAFC;
+        background-color: #F9F7E8;
         font-family: 'Inter', sans-serif;
+        color: #1E1E1E;
       }
       /* Hide scrollbar for clean UI */
       .no-scrollbar::-webkit-scrollbar {
@@ -38,6 +41,10 @@
       .no-scrollbar {
         -ms-overflow-style: none;
         scrollbar-width: none;
+      }
+      .glass-panel {
+        background: rgba(30, 30, 30, 0.95);
+        backdrop-filter: blur(10px);
       }
     </style>
   <script type="importmap">

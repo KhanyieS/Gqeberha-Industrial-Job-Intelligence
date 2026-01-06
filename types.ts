@@ -30,11 +30,12 @@ export interface Job {
   salary: string;
   description: string;
   category: JobCategory;
-  source: string; // e.g., "Indeed", "Facebook", "Agency"
+  source: string;
   link: string;
   aiAnalysis: AIAnalysis;
   status?: JobStatus;
   appliedDate?: string;
+  generatedCoverLetter?: string;
 }
 
 export interface StatMetric {
@@ -42,4 +43,10 @@ export interface StatMetric {
   value: string | number;
   trend?: number; // percentage
   color: string;
+}
+
+export interface UserCV {
+  rawText: string;
+  formattedText?: string;
+  lastUpdated: string;
 }
